@@ -4,21 +4,33 @@
     <meta charset="UTF-8">
     <title>ARAI: Forensic Audit</title>
     <style>
-                body { 
+              <style>
+        body { 
             font-family: sans-serif; 
             line-height: 1.6; 
             max-width: 800px; 
-            margin: 40px auto; 
+            margin: 0 auto; 
             padding: 20px; 
-            /* The Watermark Settings */
-            background-image: url('watermark.jpeg');
-            background-size: cover;
+            /* Fixes the image size and centering */
+            background-image: url('watermark.jpeg'); 
+            background-size: contain; /* This makes the whole picture fit */
             background-position: center;
+            background-repeat: no-repeat;
             background-attachment: fixed;
-            background-color: rgba(244, 244, 244, 0.9);
-            background-blend-mode: overlay;
+            background-color: #f4f4f4;
         }
-        .card { background: rgba(255, 255, 255, 0.95); padding: 30px; border-radius: 8px; border: 1px solid #ddd; }
+        .card { 
+            /* Restores the white box so text is readable */
+            background: rgba(255, 255, 255, 0.9); 
+            padding: 40px; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
+            margin-top: 50px;
+        }
+        h1 { color: #2c3e50; }
+        .red-alert { background: #ffe6e6; border: 2px solid red; color: #cc0000; padding: 20px; margin: 20px 0; font-weight: bold; }
+    </style>
+
 
 </head>
 <body>
