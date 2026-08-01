@@ -6,21 +6,20 @@
     <style>
         body { 
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
-            margin: 0; 
-            padding: 40px 20px; 
-            min-height: 100vh;
+            margin: 0; padding: 40px 20px; min-height: 100vh;
             background: url('watermark.jpeg') no-repeat center center fixed; 
-            background-size: cover;
-            background-color: #f4f4f4;
+            background-size: cover; background-color: #f4f4f4;
         }
         .card { 
-            max-width: 900px; 
-            margin: 0 auto; 
-            background: rgba(255, 255, 255, 0.95); 
-            padding: 50px; 
-            border-radius: 12px; 
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            max-width: 900px; margin: 0 auto; background: rgba(255, 255, 255, 0.95); 
+            padding: 50px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
+        /* Security Banner Styling */
+        .security-banner { 
+            background-color: #c0392b; color: white; padding: 15px; 
+            text-align: center; font-weight: bold; border-radius: 6px; margin-bottom: 20px;
+        }
+        .security-banner a { color: #fff; text-decoration: underline; }
         hr { border: 0; border-top: 1px solid #eee; margin: 30px 0; }
         a { color: #2980b9; text-decoration: none; font-weight: bold; }
         a:hover { text-decoration: underline; }
@@ -28,6 +27,12 @@
 </head>
 <body>
     <div class="card">
+        <!-- Security Advisory Alert -->
+        <div class="security-banner">
+            ⚠️ INTEGRITY ALERT: Unauthorized scripts are prohibited. 
+            <a href="SECURITY_ADVISORY.md">View Security Advisory</a>
+        </div>
+
         <h1>Afrikaner Rights Advocacy Initiative</h1>
         <p>Official forensic audit and documentation portal for USRAP processing irregularities.</p>
         
@@ -43,11 +48,6 @@
         
         <nav>
             <a href="index.html">Home</a> | <a href="governance.html">Governance & Standards</a>
-        </nav>
-    </div>
-</body>
-</html>
-
         </nav>
     </div>
 </body>
