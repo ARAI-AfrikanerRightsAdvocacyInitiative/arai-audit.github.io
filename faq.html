@@ -9,12 +9,11 @@
         .header-logo { display: flex; align-items: center; justify-content: center; gap: 25px; border-bottom: 2px solid #b87333; padding-bottom: 20px; margin-bottom: 30px; }
         .nav-bar { text-align: center; margin: 20px 0; padding: 10px; border-top: 1px solid #4a4a4a; border-bottom: 1px solid #4a4a4a; }
         a { color: #d18d5a; text-decoration: none; font-weight: bold; }
-        h1 { color: #b87333; text-transform: uppercase; }
-        
-        /* Accordion Style */
-        .accordion { background-color: #1c1c1c; color: #d0d0d0; cursor: pointer; padding: 18px; width: 100%; border: 1px solid #4a4a4a; text-align: left; outline: none; font-size: 1.2em; font-family: 'Courier New', Courier, monospace; margin-top: 10px; }
-        .panel { padding: 0 18px; display: none; background-color: #252525; border: 1px solid #333; margin-bottom: 10px; }
-        .btn-main { display: inline-block; background-color: #27ae60; color: white; padding: 20px 40px; border-radius: 50px; font-size: 1.2em; margin-top: 40px; }
+        h1 { color: #b87333; text-transform: uppercase; text-align: center; }
+        .accordion { background-color: #2c2c2c; color: #d18d5a; cursor: pointer; padding: 18px; width: 100%; border: 1px solid #4a4a4a; text-align: left; font-size: 1.1em; font-weight: bold; margin-top: 10px; }
+        .panel { padding: 0 18px; display: none; background-color: #161616; border: 1px solid #333; border-top: none; }
+        .btn-main { display: inline-block; background-color: #27ae60; color: white; padding: 20px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; margin-top: 40px; }
+        .source-box { background: #111; padding: 20px; border-left: 4px solid #b87333; margin-top: 40px; font-size: 0.9em; color: #888; }
     </style>
 </head>
 <body>
@@ -24,35 +23,54 @@
             <div><h1 style="margin:0; font-size: 1.5em;">FAQ | VRAE</h1></div>
         </div>
 
-        <div class="nav-bar">
-            <a href="index.html">HOME</a> | <a href="governance.html">GOVERNANCE</a> | <a href="faq.html">FAQ</a>
-        </div>
+        <div class="nav-bar"><a href="index.html">HOME</a> | <a href="governance.html">GOVERNANCE</a> | <a href="faq.html">FAQ</a></div>
 
-        <h1>Understanding Your Rights</h1>
-        <!-- FAQ ITEMS -->
-        <button class="accordion">1. What does "partial denial" mean?</button>
-        <div class="panel"><p>Standard FOIA term regarding withheld documents, not a rejection of your refugee status.</p></div>
+        <!-- 10 Vrae Accordion -->
+        <script>
+            function togglePanel(element) {
+                var panel = element.nextElementSibling;
+                panel.style.display = (panel.style.display === "block") ? "none" : "block";
+            }
+        </script>
 
-        <button class="accordion">2. Is there an appeal process?</button>
-        <div class="panel"><p>Consult a legal professional and utilize the CIS Ombudsman case review (6 U.S.C. § 272).</p></div>
+        <button class="accordion" onclick="togglePanel(this)">1. What does "partial denial" mean? / Wat beteken "gedeeltelike weiering"?</button>
+        <div class="panel"><p>Standard FOIA term regarding withheld documents, not a rejection of your status. / Standaard FOIA-term vir weerhoude dokumente, nie 'n afkeuring nie.</p></div>
+
+        <button class="accordion" onclick="togglePanel(this)">2. Is there an appeal process? / Is daar 'n appèlproses?</button>
+        <div class="panel"><p>Consult a legal professional and utilize the CIS Ombudsman case review (6 U.S.C. § 272). / Nee, gebruik die CIS Ombudsman-saakhersiening kragtens 6 U.S.C. § 272.</p></div>
         
-        <!-- Voeg hier jou ander 8 vrae in dieselfde patroon by... -->
+        <button class="accordion" onclick="togglePanel(this)">3. Consequences of ineligibility? / Gevolge van ongeskiktheid?</button>
+        <div class="panel"><p>An ineligibility finding complicates future visa applications. Challenge it via CIS Ombudsman. / Dit kompliseer toekomstige aansoeke; daag dit uit op rekord.</p></div>
+
+        <button class="accordion" onclick="togglePanel(this)">4. Data sharing clause? / Data-deling klousule?</button>
+        <div class="panel"><p>The USRAP confidentiality notice permits sharing info with foreign governments post-denial. / Die kennisgewing laat deling met buitelandse regerings toe na afkeuring.</p></div>
+
+        <button class="accordion" onclick="togglePanel(this)">5. How to lodge a complaint? / Hoe dien ek 'n klagte in?</button>
+        <div class="panel"><p>Use CIS Ombudsman, DHS OIG, or a Privacy Act request to USCIS. / Gebruik CIS Ombudsman, DHS OIG, of Privacy Act-versoeke.</p></div>
+
+        <button class="accordion" onclick="togglePanel(this)">6. CIS Ombudsman authority? / CIS Ombudsman se gesag?</button>
+        <div class="panel"><p>They investigate systemic patterns of problems under 6 U.S.C. § 272. / Hulle ondersoek sistemiese probleempatrone kragtens 6 U.S.C. § 272.</p></div>
+
+        <button class="accordion" onclick="togglePanel(this)">7. Appeal for ineligibility? / Appèl vir ongeskiktheid?</button>
+        <div class="panel"><p>No formal appeal, but use Ombudsman review and FOIA requests to document your case. / Geen formele appèl; gebruik Ombudsman-hersiening en FOIA-rekords.</p></div>
+
+        <button class="accordion" onclick="togglePanel(this)">8. FOIA timelines? / FOIA tydlyne?</button>
+        <div class="panel"><p>20 business days, though delays are frequent. Silence is a violation. / 20 werksdae, maar vertragings is algemeen. Stilte is onwettig.</p></div>
+
+        <button class="accordion" onclick="togglePanel(this)">9. If USCIS ignores FOIA? / As USCIS FOIA ignoreer?</button>
+        <div class="panel"><p>Appeal to FOIA Appeals Office or file a complaint with DHS OIG. / Appelleer by FOIA-kantoor of dien klagte in by DHS OIG.</p></div>
+
+        <button class="accordion" onclick="togglePanel(this)">10. CWS/RSC authority? / CWS/RSC se gesag?</button>
+        <div class="panel"><p>Contractors with no independent authority; they must comply with the Privacy Act. / Hulle is kontrakteurs sonder onafhanklike gesag oor jou data.</p></div>
 
         <div style="text-align: center;">
             <a href="mailto:afrikaner.advocacy.audit@proton.me" class="btn-main">CONTACT THE CUSTODIAN</a>
         </div>
-    </div>
 
-    <script>
-        var acc = document.getElementsByClassName("accordion");
-        for (var i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.display === "block") { panel.style.display = "none"; } 
-                else { panel.style.display = "block"; }
-            });
-        }
-    </script>
+        <div class="source-box">
+            <strong>SOURCES / BRONNE:</strong><br>
+            DOJ FOIA Reference Guide; CIS Ombudsman FOIA Teleconference (2010); USRAP Notice on Confidentiality (Aug 2024); 6 U.S.C. § 272.
+        </div>
+    </div>
 </body>
 </html>
