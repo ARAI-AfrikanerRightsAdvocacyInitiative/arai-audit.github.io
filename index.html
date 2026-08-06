@@ -10,61 +10,61 @@
         .security-banner a { color: #d18d5a; text-decoration: underline; }
         a { color: #b87333; text-decoration: none; font-weight: bold; }
         a:hover { color: #d18d5a; text-decoration: underline; }
-        h1, h2 { color: #b87333; text-transform: uppercase; letter-spacing: 2px; }
+        h1, h2, h3 { color: #b87333; text-transform: uppercase; letter-spacing: 2px; }
         p, li { font-size: 1.25em; } 
         .double-border { border: 3px solid #8b5a2b; padding: 5px; background: #161616; border-radius: 8px; margin-bottom: 30px; }
         .inner-border { border: 1px solid #6b4a2f; padding: 25px; border-radius: 4px; background-color: #1c1c1c; }
+        .btn-main { display: inline-block; background-color: #27ae60; color: white; padding: 20px 40px; border-radius: 50px; font-size: 1.2em; margin: 20px 0; }
     </style>
 </head>
 <body>
     <div class="card">
         <div class="security-banner">⚠️ INTEGRITY ALERT: Unauthorized scripts are prohibited. <a href="SECURITY_ADVISORY.md">View Security Advisory</a></div>
 
-        <div style="text-align: center; margin-bottom: 40px;">
-            <a href="index.html">HOME</a> | <a href="governance.html">GOVERNANCE & STANDARDS</a>
-        </div>
-
-        <div class="double-border">
-            <div class="inner-border">
-                <h1>Forensic Mission Statement</h1>
-                <p>The ARAI Forensic Audit is an independent investigation into the institutional collapse of the USRAP P2 pipeline. We are documenting the systematic weaponization of administrative security queues against Afrikaners.</p>
+        <!-- Header -->
+        <div style="display: flex; align-items: center; justify-content: center; gap: 25px; margin-bottom: 40px; border-bottom: 2px solid #b87333; padding-bottom: 20px;">
+            <img src="1.png" style="width: 130px; height: 130px; border-radius: 50%; border: 3px solid #b87333;">
+            <div style="text-align: left;">
+                <div style="font-weight: bold; font-size: 1.4em; color: #b87333; text-transform: uppercase;">Afrikaner Rights Advocacy Initiative</div>
+                <div style="font-weight: bold; font-size: 1.1em; color: #d18d5a;">Afrikaner-Regte-VoorspraakInisiatief</div>
             </div>
         </div>
 
-        <div class="double-border">
-            <div class="inner-border">
-                <h2>FAQ: Understanding Your Rights</h2>
-                <p><strong>1. What does "partial denial" mean?</strong><br>Standard FOIA term regarding withheld documents, not a rejection of your status.</p>
-                <p><strong>2. Is there an appeal process?</strong><br>Consult a legal professional and utilize the CIS Ombudsman case review (6 U.S.C. § 272).</p>
-                <p><strong>3. Consequences of ineligibility?</strong><br>An ineligibility finding complicates future visa applications. Challenge it via CIS Ombudsman.</p>
-                <p><strong>4. Data sharing clause?</strong><br>The USRAP confidentiality notice permits sharing info with foreign governments post-denial.</p>
-                <p><strong>5. How to lodge a complaint?</strong><br>Use CIS Ombudsman, DHS OIG, or a Privacy Act request to USCIS.</p>
-                <p><strong>6. CIS Ombudsman authority?</strong><br>They investigate systemic patterns of problems under 6 U.S.C. § 272.</p>
-                <p><strong>7. Appeal for ineligibility?</strong><br>No formal appeal, but use Ombudsman review and FOIA requests to document your case.</p>
-                <p><strong>8. FOIA timelines?</strong><br>20 business days, though delays are frequent. Silence is a violation.</p>
-                <p><strong>9. If USCIS ignores FOIA?</strong><br>Appeal to FOIA Appeals Office or file a complaint with DHS OIG.</p>
-                <p><strong>10. CWS/RSC authority?</strong><br>Contractors with no independent authority; they must comply with the Privacy Act.</p>
-            </div>
-        </div>
+        <div style="text-align: center; margin-bottom: 30px;"><a href="index.html">HOME</a> | <a href="governance.html">GOVERNANCE</a> | <a href="faq.html">FAQ</a></div>
 
-        <div class="double-border">
-            <div class="inner-border">
-                <h2>Gereelde Vrae: Verstaan Jou Regte</h2>
-                <p><strong>1. Wat beteken "gedeeltelike weiering"?</strong><br>Standaard FOIA-term vir weerhoude dokumente, nie 'n afkeuring nie.</p>
-                <p><strong>2. Is daar 'n appèlproses?</strong><br>Nee, gebruik die CIS Ombudsman-saakhersiening kragtens 6 U.S.C. § 272.</p>
-                <p><strong>3. Gevolge van ongeskiktheid?</strong><br>Dit kompliseer toekomstige aansoeke; daag dit uit op rekord.</p>
-                <p><strong>4. Data-deling klousule?</strong><br>Die kennisgewing laat deling met buitelandse regerings toe na afkeuring.</p>
-                <p><strong>5. Hoe dien ek 'n klagte in?</strong><br>Gebruik CIS Ombudsman, DHS OIG, of Privacy Act-versoeke.</p>
-                <p><strong>6. CIS Ombudsman se gesag?</strong><br>Hulle ondersoek sistemiese patrone kragtens 6 U.S.C. § 272.</p>
-                <p><strong>7. Appèl vir ongeskiktheid?</strong><br>Geen formele appèl; gebruik Ombudsman-hersiening en FOIA-rekords.</p>
-                <p><strong>8. FOIA tydlyne?</strong><br>20 werksdae, maar vertragings is algemeen. Stilte is onwettig.</p>
-                <p><strong>9. As USCIS FOIA ignoreer?</strong><br>Appelleer by FOIA-kantoor of dien klagte in by DHS OIG.</p>
-                <p><strong>10. CWS/RSC se gesag?</strong><br>Hulle is kontrakteurs sonder onafhanklike gesag oor jou data.</p>
-            </div>
-        </div>
+        <!-- Mission -->
+        <div class="double-border"><div class="inner-border">
+            <h1>Forensic Mission Statement</h1>
+            <p>If you have been issued a <strong>Notice of Ineligibility (NOI)</strong>, or faced obstruction by the <strong>U.S. Mission</strong>, your testimony is critical. We are auditing the weaponization of the USRAP P2 pipeline against Afrikaners as a Particular Social Group (PSG).</p>
+        </div></div>
+
+        <!-- Obstruction Pipeline -->
+        <div class="double-border"><div class="inner-border">
+            <h2>The Obstruction Pipeline</h2>
+            <p><strong>The Mandate (EO 14204):</strong> Formal U.S. recognition of Afrikaner PSG status.<br>
+            <strong>The Regulatory Lock (EO 14385):</strong> Feb 2026 redirection of FBI/DOJ databases.<br>
+            <strong>The Constructive Denial (April 27 Directive):</strong> RAIO "Operational Pause" creating an automated security queue.</p>
+        </div></div>
+
+        <!-- Redefining Threat -->
+        <div class="double-border"><div class="inner-border">
+            <h2>Redefining the Threat</h2>
+            <p>USCIS erroneously demands "physical scars" to satisfy refugee definitions—a departure from the RAIO Refugee Officer Training Manual. The threat to the Afrikaner PSG is not just a knife at the throat—it is the systematic dismantling of a people’s future.</p>
+        </div></div>
+
+        <!-- Dossier -->
+        <h2>Public Dossier & Submissions</h2>
+        <p><strong><a href="Petition_for_Systemic_Investigation_2026.pdf">1. View Formal Petition for Systemic Investigation →</a></strong></p>
+        <p><strong><a href="ARAI_Forensic_Call_Protocol_Bilingual.pdf">2. Download Official Call Protocol & Log →</a></strong></p>
 
         <div style="text-align: center; margin: 40px 0;">
-            <a href="mailto:afrikaner.advocacy.audit@proton.me" style="border: 3px solid #8b5a2b; background-color: #1c1c1c; color: #b87333; padding: 20px 45px; text-decoration: none; font-weight: bold; border-radius: 5px;">REQUEST SECURE ACCESS</a>
+            <a href="mailto:afrikaner.advocacy.audit@proton.me" class="btn-main">CONTACT THE CUSTODIAN / KONTAK DIE DATABEWAARDER</a>
+        </div>
+
+        <!-- Footer -->
+        <div style="border-top: 2px solid #b87333; padding-top: 20px; text-align: center; font-size: 0.9em; color: #888;">
+            <strong>ARAI | Afrikaner Rights Advocacy Initiative</strong><br>
+            <em>Forensic Audit & Systemic Advocacy Portal</em>
         </div>
     </div>
 </body>
