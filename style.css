@@ -1,22 +1,22 @@
-/* Globale Styl */
+/* Globale Styl - Crème/Beige Argief Tema */
 body { 
-    font-family: 'Courier New', Courier, monospace; 
-    background-color: #0a0a0a; 
-    color: #e0e0e0; 
+    font-family: 'Times New Roman', serif; /* Serif font lyk meer formeel/regs */
+    background-color: #f4ece0; /* Die Crème agtergrond */
+    color: #332d26; /* Donkerbruin/Grys teks vir leesbaarheid */
     padding: 20px; 
 }
 
-/* Header met dubbelyn-raam en ligter agtergrond */
+/* Header - Dubbelyn Raam */
 .header { 
     text-align: center; 
-    border: 5px double #b87333; 
+    border: 5px double #8b5e34; /* Koper/Brons raam */
     padding: 30px; 
-    background-color: #1e1e1e; /* Effens ligter as die swart body */
+    background-color: #eaddcf; /* Effens donkerder beige vir die raam */
     margin-bottom: 30px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-/* Watermerk - PNG instellings */
+/* Watermerk - Volskerm in Beige Tema */
 body::before {
     content: "";
     position: fixed;
@@ -27,20 +27,20 @@ body::before {
     background-image: url('watermerk.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 500px; /* Pas aan na smaak */
-    opacity: 0.15; /* PNG is ligter, so 0.15 behoort mooi te werk */
+    background-size: cover; 
+    opacity: 0.10; /* Subtiel */
     pointer-events: none;
     z-index: -1;
 }
 
-/* Houer */
+/* Container */
 .container { 
     max-width: 800px; 
     margin: auto; 
-    border: 1px solid #333; 
-    padding: 20px; 
-    background: #121212; 
+    border: 1px solid #c5b3a3; 
+    padding: 30px; 
+    background: #fdfaf6; /* Byna wit/crème binnekant */
 }
 
-a { color: #b87333; text-decoration: none; }
-.warning { border: 1px solid #b87333; padding: 15px; background: #2a1a0a; color: #ffcc99; margin: 20px 0; }
+a { color: #8b5e34; text-decoration: underline; }
+.warning { border: 1px solid #8b5e34; padding: 15px; background: #eaddcf; color: #5c3d20; margin: 20px 0; }
