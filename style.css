@@ -1,18 +1,21 @@
 /* Globale Styl */
 body { 
-    font-family: 'Segoe UI', sans-serif; 
+    font-family: 'Courier New', Courier, monospace; 
     background-color: #0a0a0a; 
     color: #e0e0e0; 
     padding: 20px; 
-    line-height: 1.6;
 }
 
-.container { max-width: 800px; margin: auto; border: 1px solid #333; padding: 30px; background: #151515; }
+/* Die Dubbelyn-raam om die Header */
+.header { 
+    text-align: center; 
+    border: 5px double #b87333; /* Dubbelyn in goud/amber */
+    padding: 30px; 
+    background: #1a1a1a; /* Ligte agtergrond teen die swart */
+    margin-bottom: 30px;
+}
 
-/* Header & Logo */
-.header { text-align: center; border-bottom: 2px solid #b87333; padding-bottom: 20px; }
-
-/* Die Watermerk - Subtiel in die agtergrond */
+/* Watermerk - Verseker dit laai korrek */
 body::before {
     content: "";
     position: fixed;
@@ -23,13 +26,18 @@ body::before {
     background-image: url('watermerk.jpeg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 50%;
-    opacity: 0.05; /* Baie lig vir leesbaarheid */
+    background-size: 400px; /* Stel die grootte vas */
+    opacity: 0.06; 
     pointer-events: none;
     z-index: -1;
-    mix-blend-mode: screen; 
 }
 
-/* Navigasie & Footer */
-a { color: #b87333; text-decoration: none; }
-.warning { border: 1px solid #b87333; padding: 15px; background: #2a1a0a; color: #ffcc99; margin: 20px 0; }
+/* Algemene houer */
+.container { 
+    max-width: 800px; 
+    margin: auto; 
+    border: 1px solid #333; 
+    padding: 20px; 
+    background: #121212; 
+}
+
