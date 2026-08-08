@@ -1,39 +1,81 @@
-/* Globale Styl - Full-Page Dossier Agtergrond */
+/* 1. Die webblad agtergrond is die prentjie (Full cover) */
 html, body {
     margin: 0;
     padding: 0;
     min-height: 100%;
     width: 100%;
+    background-image: url('agtergrond.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #000;
 }
 
 body {
     font-family: 'Courier New', Courier, monospace;
-    background-color: #000000;
-    color: #e0e0e0;
+    color: #1A1A1A;
+    padding: 40px 20px;
 }
 
-/* Die Agtergrond - Dossier Visual (Full Screen) */
-body::before {
-    content: "";
-    position: fixed; /* Hou dit vas terwyl die bladsy scrol */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('agtergrond.jpeg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover; /* Strek die prentjie oor die hele blad */
-    opacity: 0.15; /* Subtiele sigbaarheid */
-    z-index: -1;
-}
-
-/* Verseker die container is mooi in die middel */
-.container {
-    max-width: 850px;
-    margin: 40px auto;
-    border: 3px double #b87333;
+/* 2. Deursigtige Crème-papier blokke */
+/* rgba(244, 241, 234, 0.85) = Crème kleur met 85% ondeursigtigheid */
+.dossier-card, .container {
+    background-color: rgba(244, 241, 234, 0.85); 
+    border: 3px double #B87333;
+    max-width: 800px;
+    margin: 20px auto;
     padding: 40px;
-    background-color: rgba(20, 20, 20, 0.9); /* Effens donkerder vir leesbaarheid */
-    box-shadow: 0 0 20px rgba(0,0,0,0.9);
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+/* 3. Hoofopskrifte & Teks */
+h1, h2 {
+    color: #5C3D20;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* 4. Navigasie (Koper) */
+.nav {
+    margin-top: 20px;
+    border-top: 2px solid #B87333;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.nav a {
+    color: #B87333;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 15px;
+    text-transform: uppercase;
+}
+
+/* 5. Tabel (ook effens deursigtig om by die tema te pas) */
+.evidence-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.evidence-table th, .evidence-table td {
+    border: 1px solid #B87333;
+    padding: 12px;
+}
+
+.evidence-table th {
+    background-color: #B87333;
+    color: #FFFFFF;
+}
+
+/* 6. Footer */
+footer {
+    text-align: center;
+    color: #5C3D20;
+    font-weight: bold;
+    margin-top: 30px;
+    background-color: rgba(244, 241, 234, 0.85);
+    padding: 10px;
 }
