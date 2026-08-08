@@ -1,42 +1,21 @@
-/* Globale Styl - Crème/Beige Argief Tema */
-body { 
-    font-family: 'Times New Roman', serif;
-    background-color: #fcfaf5; /* Baie ligte Crème */
-    color: #2c241e; 
-    padding: 20px; 
-}
-
-/* Header - Geen soliede agtergrond nie, net die dubbel raam */
-.header { 
-    text-align: center; 
-    border: 5px double #8b5e34;
-    padding: 30px; 
-    background-color: transparent; /* Geen donker agtergrond meer nie */
-    margin-bottom: 30px;
-}
-
-/* Watermerk - Nou as 'n 'Veil' of sif */
+/* Watermerk - Nou 'n sentrale seël, nie 'n sif nie */
 body::before {
     content: "";
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Sentreer presies */
+    width: 400px; /* Vaste grootte */
+    height: 400px;
     background-image: url('watermerk.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 800px; /* Stel die grootte in pixels om volle beheer te hê */
-    opacity: 0.05; /* Baie deurskynend - soos 'n sif */
+    background-size: contain; 
+    opacity: 0.15; /* Effens donkerder as voorheen */
     pointer-events: none;
     z-index: -1;
 }
 
-/* Container - Ook deursigtig om by die papier-tema te pas */
-.container { 
-    max-width: 800px; 
-    margin: auto; 
-    border: 1px solid #c5b3a3; 
     padding: 30px; 
     background-color: rgba(255, 255, 255, 0.3); /* Baie ligte deurskynende laag */
 }
