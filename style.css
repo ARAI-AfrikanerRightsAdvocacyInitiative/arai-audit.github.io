@@ -16,7 +16,10 @@ body {
     font-family: 'Courier New', Courier, monospace;
     color: #1A1A1A;
     padding: 40px 20px;
+    font-size: 1.1em; /* Dit vergroot alle teks op die werf gelyktydig */
+    line-height: 1.8; /* Dit gee ook meer spasie tussen lyne vir beter leesbaarheid */
 }
+
 
 /* 2. Deursigtige Crème-papier blokke */
 /* rgba(244, 241, 234, 0.85) = Crème kleur met 85% ondeursigtigheid */
