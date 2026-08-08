@@ -1,0 +1,7 @@
+# Privaat lêers – moenie op publieke repo laai nie
+*.txt
+*.docx
+*.xlsx
+sensitiewe-notas.md
+headers/
+bewyse/
