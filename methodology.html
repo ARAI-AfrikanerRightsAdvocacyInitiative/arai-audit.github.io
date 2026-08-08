@@ -30,139 +30,38 @@
         <p><strong>Gmail:</strong> Three dots (⋮) → "Show original"</p>
         <p><strong>Outlook:</strong> Right-click → "View" → "Message Details"</p>
         <p><strong>ProtonMail:</strong> Right-click → "Show headers"</p>
-        <p><strong>Doel / Purpose:</strong> Vind die <em>Message-ID</em> en <em>X-MS-Exchange-CrossTenant-AuthSource</em> om te bewys dat die e-pos deur 'n geoutomatiseerde stelsel (Rep 16) gestuur is, nie deur 'n menslike beampte nie.</p>
+        <p><strong>Doel / Purpose:</strong> Locate the <em>Message-ID</em> and <em>AuthSource</em> fields to verify whether a notification was sent by an automated system (batch) or by a human officer.</p>
+        <p><em>Vind die <code>Message-ID</code> en <code>AuthSource</code>-velde om te bepaal of 'n kennisgewing deur 'n geoutomatiseerde stelsel gestuur is.</em></p>
 
         <h3>Kontrolelys / Checklist:</h3>
         <ul>
             <li>☐ Kopieer die volledige "Show original" teks (nie 'n skermkiekie nie).</li>
-            <li>☐ Soek die <code>AuthSource</code> reël (bv. <code>DBAP192MB1098.EURP192.PROD.OUTLOOK.COM</code>).</li>
-            <li>☐ Noteer die presiese <code>originalarrivaltime</code> (moet binne sekondes van ander batch-e-posse lê).</li>
-            <li>☐ Bewaar die .eml-lêer as 'n PDF saam met die oorspronklike e-pos.</li>
+            <li>☐ Identifiseer die <code>AuthSource</code>-reël en noteer die bedienernaam.</li>
+            <li>☐ Noteer die presiese aankomstyd (<code>originalarrivaltime</code>) – vergelyk dit met ander kennisgewings.</li>
+            <li>☐ Bewaar die .eml-lêer as 'n PDF vir jou eie rekords.</li>
         </ul>
 
         <!-- 2. USCIS Forensiese Oproepprotokol -->
         <h2>2. USCIS Forensic Call Protocol / USCIS Forensiese Oproepprotokol</h2>
         <p><strong>Doel / Objective:</strong> Forensic verification of backend data discrepancies. | Forensiese verifiëring van backend data-diskrepansies.</p>
 
-        <h3>i. Noodsaaklike Voorbereiding / Essential Preparation</h3>
+        <h3>Voorbereiding / Preparation</h3>
         <ul>
-            <li><strong>Beste Tyd om te Bel:</strong> 08:00 EST / 14:00 SA-tyd.</li>
-            <li><strong>Telefoonnommer:</strong> +1-800-375-5283.</li>
-            <li><strong>Hou gereed / Materials:</strong> A-Nommer, Ontvangsnr, Geboortedatum, en hierdie log.</li>
+            <li><strong>Amptelike USCIS-nommer:</strong> +1-800-375-5283.</li>
+            <li><strong>Hou gereed / Have ready:</strong> A-Nommer en Ontvangsnr, Geboortedatum, en 'n notasblok.</li>
+            <li><strong>A-Number:</strong> 9-syfer nommer wat met 'A' begin (I-590/mediese vorm).</li>
+            <li><strong>Receipt Number:</strong> 13-karakter kode (3 letters + 10 syfers) (indieningsbewys).</li>
         </ul>
 
-        <h3>ii. Waar om jou Nommers te Kry / Where to Find Your Numbers</h3>
+        <h3>Verifiëringskategorieë / Verification Categories</h3>
+        <p>ARAI beveel aan dat aansoekers die volgende aspekte van hul administratiewe rekord verifieer. <strong>Die presiese formulering word privaat aan geverifieerde aansoekers verskaf.</strong> | ARAI recommends applicants verify the following aspects of their administrative record. <strong>Exact wording is provided privately to verified applicants.</strong></p>
         <ul>
-            <li><strong>A-Number:</strong> 9-syfer nommer wat met 'A' begin (staan op I-590/mediese vorm).</li>
-            <li><strong>Receipt Number:</strong> 13-karakter kode (3 letters + 10 syfers) (staan op jou indieningsbewys).</li>
+            <li><strong>Status:</strong> Aktief of gesluit in die CLAIMS-databasis?</li>
+            <li><strong>Action Code:</strong> Wat is die huidige "Processing Action"-kode?</li>
+            <li><strong>Archivering:</strong> Is die A-File geargiveer of onder interne hersiening?</li>
+            <li><strong>Metadata:</strong> Wat is die datum van die laaste administratiewe inskrywing?</li>
+            <li><strong>Adjudikasie:</strong> Was die laaste verandering 'n stelsel-opdatering of 'n beampte-beoordeling?</li>
+            <li><strong>Flags:</strong> Is daar enige "Action Pending"-vlag aktief?</li>
         </ul>
 
-        <h3>iii. Navigasie & Skrif / Navigation & Script</h3>
-        <ul>
-            <li><strong>Navigasie:</strong> Kies "Technical Support" of "Manage Account." <em>Vermy "Application Status" om Tier 1-status-skrifte te omseil.</em></li>
-            <li><strong>Die Skrif:</strong> "I am calling to verify the status of my administrative record for data integrity purposes. My A-Number is [A#] and my Receipt Number is [Receipt#]."</li>
-            <li>"Ek bel om die status van my administratiewe rekord te verifieer vir data-integriteit. My A-nommer is [A#] en my Ontvangsnr is [Receipt#]."</li>
-        </ul>
-
-        <h3>iv. Die "Goue" Verifiëringsvrae / The "Golden" Questions</h3>
-        <ul>
-            <li><strong>Status:</strong> "Can you confirm if my case is marked 'Active' or 'Closed' in the CLAIMS database?" <em>(Kan u bevestig of my saak 'Aktief' of 'Gesluit' in CLAIMS is?)</em></li>
-            <li><strong>Action Code:</strong> "What is the 'Current Processing Action' code on my case?" <em>(Wat is die 'Current Processing Action'-kode op my saak?)</em></li>
-            <li><strong>Archival:</strong> "Has my A-File been archived, or is it currently under internal review?" <em>(Is my A-File geargiveer, of is dit onder interne hersiening?)</em></li>
-            <li><strong>Metadata:</strong> "What is the date of the last administrative entry made to my A-File?" <em>(Wat is die datum van die laaste administratiewe inskrywing in my A-File?)</em></li>
-            <li><strong>Adjudication:</strong> "Was the most recent status change a 'System Update' or 'Officer Adjudication'?" <em>(Was die onlangse statusverandering 'n 'Sisteem-opdatering' of 'n 'Beampte-beoordeling'?)</em></li>
-            <li><strong>Flag Check:</strong> "Is there an 'Action Pending' flag currently active on my case file?" <em>(Is daar 'n 'Action Pending'-vlag aktief op my saaklêer?)</em></li>
-        </ul>
-
-        <!-- 3. Forensiese Oproeplog -->
-        <h2>3. Forensic Call Log / Forensiese Oproeplog</h2>
-        <ul style="list-style: none; text-align: left; display: inline-block;">
-            <li>Applicant Name / Naam: ______________________</li>
-            <li>A-Number: _______________</li>
-            <li>Date/Time (EST): _________________</li>
-            <li>Agent Name/ID: _________________</li>
-            <li>Backend Status (Active/Closed): ___________________________________</li>
-            <li>Action Code: ___________________</li>
-            <li>Officer Name: _________________</li>
-            <li>Discrepancy/Explanation: _________________________________________</li>
-        </ul>
-
-        <!-- 4. Reëls van Betrokkenheid -->
-        <h2>4. Rules of Engagement / Reëls van Betrokkenheid</h2>
-        <ul>
-            <li><strong>DO / MOETS:</strong> Bly kalm, professioneel en klinies. Teken alle data aan. <em>(Be calm, professional, and clinical. Record all data.)</em></li>
-            <li><strong>DON'T / MOENIES:</strong> Moenie "afkeurbriewe," "hacks," of groepe noem nie. As hulle sê "Afgekeur," antwoord: "Ek verstaan dit is die portaal-aanduiding, maar ek vra om die lêerstatus in die CLAIMS-databasis te verifieer." <em>(Don't mention denial letters, hacks, or social media groups.)</em></li>
-            <li><strong>ESKALASIE / ESCALATION:</strong> As hulle weier, sê: "Dokumenteer asseblief in die rekord dat ek 'n sisteem-diskrepansie aangemeld het." <em>("Please note in the record that I have reported a system discrepancy regarding my A-File data integrity.")</em></li>
-        </ul>
-
-        <!-- 5. FOIA Bewysonttrekkingskontrolelys -->
-        <h2>5. FOIA Evidence Extraction Checklist / FOIA Bewysonttrekkingskontrolelys</h2>
-        <p><strong>Doel:</strong> Om die interne adjudikasie-rekord te kry en te bewys dat geen menslike hersiening plaasgevind het nie.</p>
-        <ul>
-            <li>☐ Vra vir die volledige A-lêer (A-file), nie net die FOIA-uittreksel nie.</li>
-            <li>☐ Soek vir "Officer ID" – generiese stringe soos <code>USCIS-AUTO</code> of <code>OFFICER-TEMP</code> = Ghost Adjudication.</li>
-            <li>☐ Soek vir "Case Notes" – as die notas leeg is of net die standaard Rep 16-sin bevat, is dit bewys van outomatisering.</li>
-            <li>☐ Kontroleer die "Date of Decision" – dit moet ooreenstem met die batch-tyd (30 Junie 2026).</li>
-            <li>☐ Kyk vir enige verwysing na "Caller ID" – bevestig die duplikaat (Construction vs Interest).</li>
-            <li><strong>Privaatheidsreël / Privacy Rule:</strong> Moet nooit jou FOIA-rekords met onverifieerde derde partye deel nie. Dien dit direk by die CIS Ombudsman in.</li>
-        </ul>
-
-        <!-- 6. Her-ondersoek / Ombudsman Voorbereiding -->
-        <h2>6. Case Re-Review / Ombudsman Preparation</h2>
-        <p><strong>Aanbevole stappe:</strong></p>
-        <ol>
-            <li>Dien 'n individuele CIS Ombudsman-klagte in (nie 'n groepbrief nie).</li>
-            <li>Heg al die bewysstukke aan (sien Evidence-bladsy vir die volledige lys).</li>
-            <li>Verwys na die Presidential Action van 7 Februarie 2025 as politieke konteks.</li>
-            <li>Vra spesifiek vir 'n "Senior Adjudication Officer" om 'n uitspraak te maak oor die Rep 16-batch.</li>
-        </ol>
-
-        <!-- 7. Data Etiek & Bewaring -->
-        <h2>7. Data Custody & Ethics Policy / Data-bewaring & Etiekbeleid</h2>
-        <p>ARAI waarborg:</p>
-        <ul>
-            <li>Geen PII word publiek vertoon nie – unieke identifikasies word gemasker.</li>
-            <li>Alle bewyse word gestoor met SHA-256-hashes vir integriteit.</li>
-            <li>Ons vra NOOIT vir jou wagwoorde, A-nommers, of FOIA-lêers in openbare forums nie.</li>
-            <li>Aansoekers behou volle eienaarskap van hul eie data.</li>
-        </ul>
-
-        <!-- 8. Bronne Geraadpleeg -->
-        <h2>8. Sources Consulted / Bronne Geraadpleeg</h2>
-        <h3>Wetgewing &amp; Regulasies / Legislation &amp; Regulations</h3>
-        <ul>
-            <li><strong>Immigration and Nationality Act (INA) § 207</strong> – Refugee admissions authority / Vlugteling-toelatingsgesag.</li>
-            <li><strong>Administrative Procedure Act (APA) § 706</strong> – Judicial review of arbitrary and capricious agency action / Geregtelike hersiening van arbitrêre en wispelturige agentskapsoptrede.</li>
-            <li><strong>Privacy Act of 1974, 5 U.S.C. § 552a</strong> – Protection of personal records / Beskerming van persoonlike rekords.</li>
-            <li><strong>Freedom of Information Act (FOIA), 5 U.S.C. § 552</strong> – Access to agency records / Toegang tot agentskaprekords.</li>
-            <li><strong>6 U.S.C. § 272</strong> – CIS Ombudsman authority / CIS-Ombudsman se gesag.</li>
-        </ul>
-
-        <h3>Beleidsdokumente &amp; Handleidings / Policy Documents &amp; Manuals</h3>
-        <ul>
-            <li><strong>USCIS Policy Manual, Vol. 3</strong> – Humanitarian Protection / Humanitêre Beskerming.</li>
-            <li><strong>RAIO Training Modules</strong> – Refugee and International Operations adjudication standards / Vlugteling- en Internasionale Operasies adjudikasiestandaarde.</li>
-            <li><strong>DOJ Civil Rights Division Policy Documents</strong> – Enforcement of non-discrimination and due process / Toepassing van nie-diskriminasie en regverdige proses.</li>
-            <li><strong>UNHCR Resettlement Handbook</strong> – International resettlement standards / Internasionale hervestigingstandaarde.</li>
-        </ul>
-
-        <h3>Uitvoerende Bevele / Executive Actions</h3>
-        <ul>
-            <li><strong>Presidential Action of February 7, 2025</strong> – Humanitarian relief for persecuted Afrikaners / Humanitêre verligting vir vervolgde Afrikaners.</li>
-        </ul>
-
-        <!-- 9. Sleutelterme -->
-        <h2>9. Key Terms / Sleutelterme</h2>
-        <p>CIS Ombudsman Application • I-590 Refugee Application • Rep 16 Batch Denial • Family Fracturing • Reservation of Rights • Systemic Corruption • Coercion • Intimidation • CLAIMS Database • A-File Metadata • Privacy Act • FOIA • INA § 207</p>
-
-    </div>
-
-    <!-- Enkele Footer -->
-    <footer>
-        <p>ARAI | Forensic Audit Portal | Forensiese Ouditportaal</p>
-        <p>Data Integrity is Our Mandate | Data-integriteit is ons mandaat</p>
-    </footer>
-
-</body>
-</html>
-
+        <!-- 3. Privaat Skrif & Log
