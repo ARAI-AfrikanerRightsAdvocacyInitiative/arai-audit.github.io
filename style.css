@@ -1,4 +1,4 @@
-/* 1. Die webblad agtergrond is die prentjie (Full cover) */
+/* --- Globale Styl: Volle Blad Forensiese Dossier --- */
 html, body {
     margin: 0;
     padding: 0;
@@ -16,30 +16,31 @@ body {
     font-family: 'Courier New', Courier, monospace;
     color: #1A1A1A;
     padding: 40px 20px;
-    font-size: 1.1em; /* Dit vergroot alle teks op die werf gelyktydig */
-    line-height: 1.8; /* Dit gee ook meer spasie tussen lyne vir beter leesbaarheid */
+    font-size: 1.1em;
+    line-height: 1.8;
+    text-align: center; /* Sentraliseer alles op die bladsy */
 }
 
-
-/* 2. Deursigtige Crème-papier blokke */
-/* rgba(244, 241, 234, 0.85) = Crème kleur met 85% ondeursigtigheid */
+/* --- Die Dossier Kaart & Container --- */
 .dossier-card, .container {
-    background-color: rgba(244, 241, 234, 0.85); 
-    border: 3px double #B87333;
+    background-color: rgba(244, 241, 234, 0.9); /* Crème papier */
+    border: 3px double #B87333; /* Koper raam */
     max-width: 800px;
     margin: 20px auto;
     padding: 40px;
     box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    text-align: center;
 }
 
-/* 3. Hoofopskrifte & Teks */
+/* --- Hoofopskrifte & Teks --- */
 h1, h2 {
     color: #5C3D20;
     text-transform: uppercase;
     text-align: center;
+    margin: 10px 0;
 }
 
-/* 4. Navigasie (Koper) */
+/* --- Navigasie --- */
 .nav {
     margin-top: 20px;
     border-top: 2px solid #B87333;
@@ -53,14 +54,21 @@ h1, h2 {
     font-weight: bold;
     padding: 0 15px;
     text-transform: uppercase;
+    font-size: 0.9em;
 }
 
-/* 5. Tabel (ook effens deursigtig om by die tema te pas) */
+/* --- Lyste (Bly netjies in die middel) --- */
+ul {
+    display: inline-block;
+    text-align: left; /* Teks binne die lys is links-belyn vir leesbaarheid */
+}
+
+/* --- Tabel vir Bewyse --- */
 .evidence-table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .evidence-table th, .evidence-table td {
@@ -73,12 +81,16 @@ h1, h2 {
     color: #FFFFFF;
 }
 
-/* 6. Footer */
+/* --- Footer --- */
 footer {
     text-align: center;
     color: #5C3D20;
     font-weight: bold;
     margin-top: 30px;
-    background-color: rgba(244, 241, 234, 0.85);
-    padding: 10px;
+    background-color: rgba(244, 241, 234, 0.9);
+    padding: 15px;
+    border: 2px solid #B87333;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
