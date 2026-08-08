@@ -1,18 +1,43 @@
-/* Watermerk - Nou 'n sentrale "Ghost Logo" */
+/* Globale Styl - Crème/Beige Argief Tema */
+body { 
+    font-family: 'Times New Roman', serif;
+    background-color: #fcfaf5; 
+    color: #2c241e; 
+    padding: 20px; 
+    margin: 0;
+}
+
+/* Die Watermerk - Volblad & Professioneel */
 body::before {
     content: "";
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 500px;
-    height: 500px;
-    background-image: url('watermark.jpg'); /* Maak seker die naam is presies so */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('watermark.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
-    opacity: 0.08; /* Baie lig */
+    background-size: cover; 
+    opacity: 0.08; /* 'n Effens sterker 'veil' */
     pointer-events: none;
     z-index: -1;
-    mix-blend-mode: multiply; /* Hierdie maak die wit agtergrond van die JPG "onzichtbaar" op die crème papier */
+    mix-blend-mode: multiply; 
+}
+
+/* Header & Container */
+.header { 
+    text-align: center; 
+    border: 5px double #8b5e34;
+    padding: 30px; 
+    background-color: rgba(255, 255, 255, 0.4); /* Maak header effens duideliker */
+    margin-bottom: 30px;
+}
+
+.container { 
+    max-width: 800px; 
+    margin: auto; 
+    border: 1px solid #c5b3a3; 
+    padding: 30px; 
+    background-color: rgba(255, 255, 255, 0.5); /* Papier-effek */
 }
