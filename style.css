@@ -1,43 +1,23 @@
-/* Globale Styl - Crème/Beige Argief Tema */
-body { 
-    font-family: 'Times New Roman', serif;
-    background-color: #fcfaf5; 
-    color: #2c241e; 
-    padding: 20px; 
-    margin: 0;
-}
-
-/* Die Watermerk - Volblad & Professioneel */
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('watermark.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; 
-    opacity: 0.08; /* 'n Effens sterker 'veil' */
-    pointer-events: none;
-    z-index: -1;
-    mix-blend-mode: multiply; 
-}
-
-/* Header & Container */
+/* Optimized Header */
 .header { 
     text-align: center; 
-    border: 5px double #8b5e34;
+    border-bottom: 2px solid #8b5e34; 
     padding: 30px; 
-    background-color: rgba(255, 255, 255, 0.4); /* Maak header effens duideliker */
-    margin-bottom: 30px;
 }
 
-.container { 
-    max-width: 800px; 
-    margin: auto; 
-    border: 1px solid #c5b3a3; 
-    padding: 30px; 
-    background-color: rgba(255, 255, 255, 0.5); /* Papier-effek */
+.header img { 
+    height: 150px; /* Increased logo size */
+    margin-bottom: 15px; 
+}
+
+.header h1 { 
+    font-size: 1.8em; /* Reduced title size */
+    margin: 5px 0;
+    color: #5c3d20;
+}
+
+.header h3 { 
+    font-size: 1.1em; 
+    font-weight: normal;
+    color: #8b5e34;
 }
