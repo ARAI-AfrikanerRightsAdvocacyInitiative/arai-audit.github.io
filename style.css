@@ -1,31 +1,3 @@
-/* --- Globale Styl: Forensiese Dossier Tema --- */
-body {
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #F4F1EA; /* Crème papier */
-    color: #1A1A1A;
-    margin: 0;
-    padding: 40px;
-    line-height: 1.6;
-}
-
-/* --- Die Dossier Kaart (Header) --- */
-.dossier-card {
-    border: 3px double #4A4A4A;
-    padding: 30px;
-    margin-bottom: 30px;
-    text-align: center;
-    background-color: #FFFFFF;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.dossier-card h1 {
-    font-size: 1.5em;
-    color: #1A1A1A;
-    margin: 5px 0;
-}
-
 /* --- Navigasie --- */
 .nav {
     margin-top: 15px;
@@ -34,48 +6,15 @@ body {
 }
 
 .nav a {
-    color: #4A4A4A;
+    color: #B87333; /* Ou-goud / Koper kleur */
     text-decoration: none;
-    font-weight: bold;
-    padding: 0 10px;
+    font-weight: bold; /* Maak dit vetgedruk */
+    padding: 0 15px;
+    text-transform: uppercase; /* Gee dit 'n meer formele "header" gevoel */
+    font-size: 0.9em;
 }
 
-/* --- Inhoud area --- */
-.container {
-    max-width: 800px;
-    margin: auto;
-    background: #FFFFFF;
-    padding: 40px;
-    border: 1px solid #c5b3a3;
-}
-
-/* --- Watermerk --- */
-body::before {
-    content: "";
-    position: fixed;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background-image: url('watermerk.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.03; /* Baie subtiel */
-    pointer-events: none;
-    z-index: -1;
-}
-
-/* --- Tabel vir Bewyse --- */
-.evidence-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-.evidence-table th, .evidence-table td {
-    border: 1px solid #c5b3a3;
-    padding: 12px;
-    text-align: left;
-}
-
-.evidence-table th {
-    background-color: #4A4A4A;
-    color: #FFFFFF;
+.nav a:hover {
+    color: #5C3D20; /* Donkerder koper wanneer mens oor die skakel beweeg */
+    text-decoration: underline;
 }
