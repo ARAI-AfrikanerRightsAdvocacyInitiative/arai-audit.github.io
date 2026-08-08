@@ -1,23 +1,14 @@
-/* Optimized Header */
-.header { 
-    text-align: center; 
-    border-bottom: 2px solid #8b5e34; 
-    padding: 30px; 
+.evidence-table th, .evidence-table td {
+    border: 1px solid #c5b3a3;
+    padding: 12px;
+    text-align: left;
 }
 
-.header img { 
-    height: 150px; /* Increased logo size */
-    margin-bottom: 15px; 
+.evidence-table tr:nth-child(even) {
+    background-color: rgba(139, 94, 52, 0.05);
 }
 
-.header h1 { 
-    font-size: 1.8em; /* Reduced title size */
-    margin: 5px 0;
-    color: #5c3d20;
-}
-
-.header h3 { 
-    font-size: 1.1em; 
-    font-weight: normal;
-    color: #8b5e34;
+.evidence-table th {
+    background-color: #5c3d20;
+    color: #fcfaf5;
 }
