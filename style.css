@@ -1,22 +1,55 @@
-/* Globale Styl - Forensiese Dossier Tema */
+/* --- Globale Styl: Forensiese Dossier Tema --- */
 body {
     font-family: 'Courier New', Courier, monospace;
     background-color: #F4F1EA; /* Crème papier */
     color: #1A1A1A;
     margin: 0;
     padding: 40px;
+    line-height: 1.6;
 }
 
-/* Die Dubbelyn-raam kaart vir Logo/Naam */
+/* --- Die Dossier Kaart (Header) --- */
 .dossier-card {
     border: 3px double #4A4A4A;
-    padding: 20px;
+    padding: 30px;
     margin-bottom: 30px;
     text-align: center;
     background-color: #FFFFFF;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Watermerk (Subtiel) */
+.dossier-card h1 {
+    font-size: 1.5em;
+    color: #1A1A1A;
+    margin: 5px 0;
+}
+
+/* --- Navigasie --- */
+.nav {
+    margin-top: 15px;
+    border-top: 1px solid #4A4A4A;
+    padding-top: 10px;
+}
+
+.nav a {
+    color: #4A4A4A;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+/* --- Inhoud area --- */
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #FFFFFF;
+    padding: 40px;
+    border: 1px solid #c5b3a3;
+}
+
+/* --- Watermerk --- */
 body::before {
     content: "";
     position: fixed;
@@ -24,7 +57,25 @@ body::before {
     background-image: url('watermerk.png');
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.05; /* Baie ligte "veil" */
+    opacity: 0.03; /* Baie subtiel */
     pointer-events: none;
     z-index: -1;
+}
+
+/* --- Tabel vir Bewyse --- */
+.evidence-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.evidence-table th, .evidence-table td {
+    border: 1px solid #c5b3a3;
+    padding: 12px;
+    text-align: left;
+}
+
+.evidence-table th {
+    background-color: #4A4A4A;
+    color: #FFFFFF;
 }
