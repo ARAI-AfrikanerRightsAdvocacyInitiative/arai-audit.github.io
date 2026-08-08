@@ -1,24 +1,18 @@
-/* Watermerk - Nou 'n sentrale seël, nie 'n sif nie */
+/* Watermerk - Nou 'n sentrale "Ghost Logo" */
 body::before {
     content: "";
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Sentreer presies */
-    width: 400px; /* Vaste grootte */
-    height: 400px;
-    background-image: url('watermerk.png');
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    background-image: url('watermark.jpg'); /* Maak seker die naam is presies so */
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain; 
-    opacity: 0.15; /* Effens donkerder as voorheen */
+    background-size: contain;
+    opacity: 0.08; /* Baie lig */
     pointer-events: none;
     z-index: -1;
+    mix-blend-mode: multiply; /* Hierdie maak die wit agtergrond van die JPG "onzichtbaar" op die crème papier */
 }
-
-    padding: 30px; 
-    background-color: rgba(255, 255, 255, 0.3); /* Baie ligte deurskynende laag */
-}
-
-a { color: #8b5e34; }
-.warning { border: 1px solid #8b5e34; padding: 15px; background: rgba(218, 165, 32, 0.1); color: #5c3d20; }
