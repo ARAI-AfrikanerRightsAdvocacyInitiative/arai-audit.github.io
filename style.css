@@ -62,12 +62,23 @@ h1, h2 {
     margin: 10px 0;
 }
 
-/* --- Navigasie --- */
-.nav {
-    margin-top: 20px;
-    border-top: 2px solid #B87333;
-    padding-top: 15px;
-    text-align: center;
+<div class="dossier-card">
+    <img src="logo.png" alt="ARAI Logo" style="height: 150px;">
+    <h1>Afrikaner Rights Advocacy Initiative</h1>
+    <h1>Afrikaner Regte Voorspraak Inisiatief</h1>
+    <p><em>Independent Data Custodian | Onafhanklike Data-bewaarder</em></p>
+    
+    <!-- 🔽 REGGEMAAKTE NAVIGASIE 🔽 -->
+    <nav class="nav">
+        <a href="index.html">Home / Tuis</a> |
+        <a href="about.html">About / Oor</a> |
+        <a href="evidence.html">Evidence / Bewysstukke</a> |
+        <a href="methodology.html">Methodology / Metodologie</a> |
+        <a href="reality.html">Reality / Realiteit</a>
+    </nav>
+    <!-- 🔼 EINDE VAN NAVIGASIE 🔼 -->
+</div>
+
 }
 
 .nav a {
