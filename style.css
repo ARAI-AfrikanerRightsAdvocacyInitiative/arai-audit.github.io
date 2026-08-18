@@ -1,4 +1,10 @@
 /* --- Globale Styl: Volle Blad Forensiese Dossier --- */
+body {
+    background: linear-gradient(180deg, #fdfaf6 0%, #f5ead8 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
 html, body {
     margin: 0;
     padding: 0;
